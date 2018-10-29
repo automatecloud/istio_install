@@ -249,13 +249,13 @@ gateways:
     - port: 80
       targetPort: 80
       name: http2
-      nodePort: 8100
+      nodePort: 9100
     - port: 443
       name: https
-      nodePort: 8101
+      nodePort: 9101
     - port: 31400
       name: tcp
-      nodePort: 8102
+      nodePort: 9102
     # Pilot and Citadel MTLS ports are enabled in gateway - but will only redirect
     # to pilot/citadel if global.meshExpansion settings are enabled.
     - port: 15011
